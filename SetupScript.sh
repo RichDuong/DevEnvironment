@@ -1,4 +1,7 @@
 #!/bin/bash
 #Simple Bash Script for Environemnt Setup
 
-echo Test Script
+echo Starting Test Script
+apt update 
+apt upgrade -y
+apt autoremove
