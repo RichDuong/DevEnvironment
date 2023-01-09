@@ -18,8 +18,8 @@ func main(){
 
 ss := []string{"Richard", "Rachel", "Roman", "Steve", "Mark", "Henry"}
 
-testfilter := func(s string) bool { return !strings.HasPrefix(s, "R") && len(s) <= 20 }
-s2 := filter(ss, testfilter)
+FilterWhere := func(s string) bool { return !strings.HasPrefix(s, "R") && len(s) <= 20 }
+s2 := filter(ss, FilterWhere)
 
 fmt.Println(s2)
 
